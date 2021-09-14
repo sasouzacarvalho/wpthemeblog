@@ -1,0 +1,433 @@
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYXgKVElMYYaJe8bpLHnCwDKtdY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjQ76MIY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ibmplexsans/v9/zYX9KVElMYYaJe8bpLHnCwDKjWr7MIY.ttf) format('truetype');
+}
+.btn {
+  border: 2px solid #2C3281;
+  color: #2C3281;
+  background: #fff;
+  padding: 5px 30px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 18px;
+}
+.btn:hover {
+  background: #14a38b;
+  border: 2px solid transparent;
+  color: #fff;
+}
+.btn-log {
+  background: #2C3281;
+  color: #fff;
+}
+.btn-log:hover {
+  background: #14a38b;
+  border: 2px solid transparent;
+}
+header {
+  width: 100%;
+  padding: 10px 0;
+  background: #fff;
+  box-shadow: 0px 4px 5px 0px rgba(215, 215, 215, 0.75);
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(215, 215, 215, 0.75);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(215, 215, 215, 0.75);
+}
+header .header {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+header .header .logo {
+  margin-top: 10px;
+}
+header .header .logo img {
+  width: 195px;
+  height: 45px;
+}
+header .header nav {
+  display: flex;
+}
+header .header nav a {
+  color: #2C2738;
+  font-size: 18px;
+}
+header .header nav a:hover {
+  color: #14a38b;
+}
+header .header nav .menu {
+  margin-top: 7px;
+}
+header .header ul {
+  display: flex;
+}
+.homepage {
+  width: 90%;
+  margin: 0 auto;
+}
+.homepage a {
+  color: #2C2738;
+}
+.homepage h2 {
+  color: #20194A;
+}
+.homepage .path {
+  margin-top: 40px;
+}
+.homepage .path ul {
+  display: flex;
+}
+.homepage .path ul li {
+  margin: 2px;
+}
+.homepage .path ul li a {
+  color: #394089;
+}
+.homepage .topo {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  margin: 30px 0px;
+  border-bottom: 1px solid #2c328136;
+}
+.homepage .topo .menu-topo ul {
+  display: flex;
+}
+.homepage .topo .menu-topo ul li {
+  margin: 20px 40px;
+}
+.homepage .topo .menu-topo ul li:first-child {
+  margin-left: 0px;
+}
+.homepage .topo .menu-topo ul li a {
+  color: #394089;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.homepage .topo .menu-topo ul li a:hover {
+  color: #14a38b;
+}
+.homepage .topo form label {
+  display: none;
+}
+.homepage .topo form input {
+  border-right: none;
+  border-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom: 1px solid #DBE2EA;
+  border-top: 1px solid #DBE2EA;
+  border-left: 1px solid #DBE2EA;
+  width: 489px;
+  height: 52px;
+  outline: 0;
+  padding-left: 10px;
+  position: relative;
+  left: 2px;
+}
+.homepage .topo form button {
+  color: transparent;
+  background: url(../images/busca.png) no-repeat;
+  width: 50px;
+  height: 52px;
+  background-color: #fff;
+  background-position: center;
+  position: relative;
+  border-left: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 1px solid #DBE2EA;
+  border-top: 1px solid #DBE2EA;
+  border-right: 1px solid #DBE2EA;
+}
+.destaque {
+  background-image: linear-gradient(45deg, #20194A 10%, #20194A 80%);
+  overflow: hidden;
+}
+.destaque img {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  -webkit-mask-image: linear-gradient(to top, transparent 10%, black 80%);
+  transition: transform 1s, filter 2s ease-in-out;
+  transform: scale(1.2);
+}
+.destaque img:hover {
+  transform: scale(1.5);
+}
+.destaque h1 {
+  position: absolute;
+  margin: 109px 85px;
+  width: 34%;
+  z-index: 3;
+}
+.destaque h1 a {
+  color: #fff;
+  font-size: 3rem;
+}
+.destaque .barra {
+  background: url("../images/barra.png") no-repeat;
+  width: 100%;
+  height: 9px;
+  display: block;
+}
+.content .posts_news {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+.content .posts_news h3 a {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #20194A;
+}
+.content .posts_news .conteudo {
+  width: 390px;
+  margin: 7px;
+}
+.content .posts_news .conteudo img {
+  width: 390px;
+  height: 240px;
+}
+.content .posts_news .conteudo .text {
+  background: #fff;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #2C2738;
+}
+.content .posts_news .conteudo .title {
+  background: #fff;
+  font-size: 24px;
+  line-height: 30px;
+  padding: 15px;
+  margin-top: -4px;
+}
+.content .posts_news .conteudo .mais {
+  background: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 15px;
+}
+.content .posts_news .conteudo .mais a {
+  text-decoration: underline;
+  color: #394089;
+}
+.content .posts_news .conteudo .mais a:hover {
+  color: #F15D5B;
+}
+.content .posts_news .conteudo .categorypost {
+  padding: 3px 0;
+  margin-top: 50px;
+}
+.content .categorypost#post-22 {
+  background: #F15D5B;
+  display: block;
+  width: 169px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.content .categorypost#post-40,
+.content .categorypost#post-55 {
+  background: #14A38B;
+  display: block;
+  width: 169px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.content .categorypost#post-42,
+.content .categorypost#post-53 {
+  background: #FAC610;
+  display: block;
+  width: 169px;
+  text-align: center;
+  color: #20194A;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.content .categorypost#post-46 {
+  background: #E65E2E;
+  display: block;
+  width: 169px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+footer {
+  background-color: #2C3281;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  margin: 20px 18px;
+}
+footer ul li a {
+  color: #fff;
+}
+footer ul li a:hover {
+  opacity: 0.5;
+  color: #fff;
+}
+footer .footer-top {
+  display: flex;
+  border-bottom: 1px solid #fff;
+  padding: 30px 0;
+  width: 1230px;
+  margin: 0 auto;
+}
+footer .footer-top .logo-footer {
+  width: 50%;
+}
+footer .footer-top .menu_footer {
+  width: 50%;
+}
+footer .rights {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 30px 0;
+}
+.interna {
+  width: 100%;
+  margin: 0 auto;
+}
+.interna .content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+}
+.interna .content .post {
+  width: 917px;
+  margin-left: 130px;
+  margin-top: 52px;
+}
+.interna .content .post h1 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+  color: #394089;
+}
+.interna .content .post .data {
+  font-size: 16px;
+  color: #2C3281;
+  line-height: 30px;
+  font-weight: 400;
+  padding: 5px 0;
+}
+.interna .content .post img {
+  width: 914px;
+  height: 349px;
+  left: 0px;
+  top: 120px;
+}
+.interna .content .post p {
+  font-size: 14px;
+  color: #2C2738;
+  padding: 10px 0;
+}
+.interna .recomendados {
+  width: 100%;
+  background: #fff;
+  height: 618px;
+  padding-bottom: 80px;
+}
+.interna .recomendados span {
+  color: #F15D5B;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+  padding: 50px 0 10px;
+}
+.interna .recomendados h2 {
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+  color: #2C2738;
+  margin-bottom: 30px;
+}
+.sidebar {
+  margin-top: 120px;
+}
+.sidebar h2 {
+  color: #F15D5B;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.sidebar li {
+  margin: 10px 0;
+}
+.sidebar li a {
+  color: #394089;
+}
+.sidebar .wp-block-categories-list {
+  margin-bottom: 50px;
+}
+.share {
+  color: #394089;
+}
+.share ul {
+  display: flex;
+}
+.share ul li {
+  margin-left: 0;
+}
+.share p.link,
+.share .link-post {
+  color: #2C3281 !important;
+}
+.share .link-post {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 17px;
+  display: block;
+  background: #fff;
+  padding: 10pX;
+  margin-bottom: 50px;
+  width: 457px;
+}

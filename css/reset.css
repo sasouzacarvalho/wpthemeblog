@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: #f4f5f9;
+}
+li {
+  list-style: none;
+  margin: 20px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #14a38b;
+}
+#wpadminbar {
+  display: none;
+}
+.sidebar .cat-item a:hover {
+  color: #14a38b !important;
+}
